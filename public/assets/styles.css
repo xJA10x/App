@@ -1,8 +1,20 @@
+/***************************
+
+Main styles
+
+***************************/
+
 body{
     background: #0d1521;
     font-family: tahoma;
     color: #989898;
 }
+
+/***************************
+
+Table styles
+
+***************************/
 
 #todo-table{
     position: relative;
@@ -19,6 +31,12 @@ body{
     display: block;
     clear: both;
 }
+
+/**********************
+
+Buttons styles
+
+***********************/
 
 input[type="text"]{
     width: 70%;
@@ -42,6 +60,12 @@ button{
     font-size: 20px;
 }
 
+/************************
+
+list styles
+
+*************************/
+
 ul{
     list-style-type: none;
     padding: 0;
@@ -64,7 +88,19 @@ li:hover{
 }
 
 h1{
-    background: url(/logo.png) no-repeat center;
+    background: url(/assets/logo.png) no-repeat center;
     margin-bottom: 0;
     text-indent: -10000px;
+}
+
+/****************************
+
+footer styles
+
+*****************************/
+
+footer {
+
+  text-align: center;
+
 }

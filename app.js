@@ -1,7 +1,7 @@
-// Imports express.
-const express = require('express');
+ // Imports express.
+var express = require('express');
 // Imports module.
-const todoController = require('./controllers/todoController');
+var todoController = require('./controllers/todoController');
 
 // Initializes express app.
 var app = express();
@@ -9,8 +9,9 @@ var app = express();
 // Sets up template engine.
 app.set('view engine', 'ejs');
 
-// Serve up static files.
-app.use( express.static('./public'));
+// Serve up static files
+// such as html and css.
+app.use(express.static('./public'));
 
 // Fire controllers.
 // By passing app as a parameter,

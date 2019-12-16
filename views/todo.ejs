@@ -1,0 +1,37 @@
+<html>
+  <head>
+  </head>
+  <title>Todo List</title>
+  <script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+  <link href="/assets/styles.css" rel="stylesheet" type="text/css">
+  <!-- Imports javascript to do list in order to work when clicking on submit -->
+  <script type="text/javascript" src="/assets/todo-list.js"></script>
+  </head>
+  <body>
+    <h1>My Todo List</h1>
+    <!--All of our to do items are going to go in this table -->
+    <div id="todo-table">
+      <!-- The form is used when a user wants to add an item to the list -->
+      <form>
+        <!-- for typing  in the input box -->
+        <input type="text" name="item" placeholder="Add new item.." required />
+        <!-- button for when the user clicks -->
+        <button type="submit"> Add Item</button>
+      </form>
+      <!-- list with items that will populate with data from a data base -->
+      <ul>
+        <!-- Outputs data dynamically using ejs syntax-->
+        <!-- Loops through each item in the array -->
+        <!-- Every time we reload the page this ejs template is re render using
+        the new data that has a new item push into the array-->
+        <% for(var i = 0; i < todos.length; i++) { %>
+          <li><%= todos[i].item %></li>
+        <% } %>
+      </ul>
+    </div>
+    <footer>
+      <p>Produced by Jhoset</p>
+    </footer>
+  </body>
+  </body>
+</html>
